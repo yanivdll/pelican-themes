@@ -5,22 +5,16 @@
 <h2>Posts</h2>
 {% endblock %}
 
-<ol id="post-list">
+<ul id="post-list">
 {% for article in articles_page.object_list %}
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                    <address class="vcard author">By
-                    {% for author in article.authors %}
-                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                    {% endfor %}
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-        </article></li>
+            <li>
+            <article class="hentry">
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+                        <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr><!-- /.post-info -->
+            </article><!-- /.entry-content -->
+        </li>
 {% endfor %}
-</ol><!-- /#posts-list -->
+</ul><!-- /#posts-list -->
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
 {% endif %}
