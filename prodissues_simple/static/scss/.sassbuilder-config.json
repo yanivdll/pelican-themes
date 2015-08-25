@@ -1,0 +1,11 @@
+{
+	"project_path": "~/dev/prodissues_simple/static",
+	"output_path": "../css/",
+	"options": {
+		"cache":         false,
+		"debug":         false,
+		"line-comments": true,
+		"line-numbers":  true,
+		"style":         "nested"
+	}
+}
