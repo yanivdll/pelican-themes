@@ -10,8 +10,10 @@
 <ul id="post-list">
 	{% for article in articles_page.object_list %}
 	<h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
-	<h5><abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr></h5>
-	<p>{{ article.summary }}<a href="{{ SITEURL }}/{{ article.url }}">read more &rsaquo;</a></p><!-- /.post-meta -->
+	
+	{% include 'post_meta.html' %}<!-- /.post-meta -->
+
+	<p>{{ article.summary }}<a href="{{ SITEURL }}/{{ article.url }}">read more &rsaquo;</a></p>
 </li>
 {% endfor %}
 </ul><!-- /#posts-list -->
