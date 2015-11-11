@@ -25,7 +25,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   color: black;
-  font-family: Cochin;
+  font-family: PTSerif;
   font-size: 1.05em;
   line-height: 1.45; }
 
@@ -64,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: PTSansNarrow;
+  font-family: Montserrat, sans-serif;
   line-height: 1.2; }
 
 p {
@@ -349,7 +349,7 @@ li.sidebar::after {
 
 a.sidebar {
   font-size: 1.4em;
-  font-family: PTSansNarrow;
+  font-family: Montserrat, sans-serif;
   color: #3D709D; }
   a.sidebarhover {
     text-decoration: underline; }
@@ -371,14 +371,9 @@ a.sidebar {
   font-weight: normal;
   src: url("../fonts/ptsansnarrow_bold_macroman/PTN77F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsansnarrow_bold_macroman/PTN77F-webfont.woff2") format("woff2"), url("../fonts/ptsansnarrow_bold_macroman/PTN77F-webfont.woff") format("woff"), url("../fonts/ptsansnarrow_bold_macroman/PTN77F-webfont.ttf") format("truetype"), url("../fonts/ptsansnarrow_bold_macroman/PTN77F-webfont.svg#PTSansNarrowBold") format("svg"); }
 @font-face {
-  font-family: PTSandsRegular;
+  font-family: PTSerif;
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/ptsans_regular_macroman/PTS55F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsans_regular_macroman/PTS55F-webfont.woff2") format("woff2"), url("../fonts/ptsans_regular_macroman/PTS55F-webfont.woff") format("woff"), url("../fonts/ptsans_regular_macroman/PTS55F-webfont.ttf") format("truetype"), url("../fonts/ptsans_regular_macroman/PTS55F-webfont.svg#PTSandsRegular") format("svg"); }
-@font-face {
-  font-family: Cochin;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/ptsans_regular_macroman/ufonts.com_nicolas-cochin-ef-webfont.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsans_regular_macroman/ufonts.com_nicolas-cochin-ef-webfont.eot.woff2") format("woff2"), url("../fonts/ptsans_regular_macroman/ufonts.com_nicolas-cochin-ef-webfont.eot.woff") format("woff"), url("../fonts/ptsans_regular_macroman/ufonts.com_nicolas-cochin-ef-webfont.eot.ttf") format("truetype"), url("../fonts/ptsans_regular_macroman/ufonts.com_nicolas-cochin-ef-webfont.eot.svg#Cochin") format("svg"); }
+  src: url("../fonts/ptserif_regular_macroman/PTF55F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptserif_regular_macroman/PTF55F-webfont.woff2") format("woff2"), url("../fonts/ptserif_regular_macroman/PTF55F-webfont.woff") format("woff"), url("../fonts/ptserif_regular_macroman/PTF55F-webfont.ttf") format("truetype"), url("../fonts/ptserif_regular_macroman/PTF55F-webfont.svg#PTSerif") format("svg"); }
 
 /*# sourceMappingURL=main.css.map */
